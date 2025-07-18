@@ -1,12 +1,9 @@
-# Java-Login-System
-Java Full-Stack Login &amp; Registration System using JSP, Servlets, and MySQL
+
 # Java Full-Stack Login & Registration System
 
 This is a simple full-stack web application built using **JSP**, **Servlets**, and **MySQL**. It allows users to register, log in, and log out securely using session management.
 
----
-
-## 🔧 Technologies Used
+##  Technologies Used
 
 - Java (Servlets & JSP)
 - HTML/CSS
@@ -14,63 +11,38 @@ This is a simple full-stack web application built using **JSP**, **Servlets**, a
 - JDBC (Java Database Connectivity)
 - Apache Tomcat (Server)
 
----
 
-## 📁 Project Structure
 
-ProjectRoot/
-│
-├── index.jsp # Home page after successful login
-├── login.jsp # Login form page
-├── registration.jsp # Registration form page
-│
-├── login.java # Servlet for login authentication
-├── logout.java # Servlet for logout logic
-│
-└── web.xml # Deployment descriptor (if used)
-
-pgsql
-Copy
-Edit
-
----
-
-## 🛠️ Setup Instructions
-
-1. **Clone or Download the Project**
+## Setup Instructions
 
 2. **Create MySQL Database**
 
 ```sql
-CREATE DATABASE user;
-USE user;
+CREATE DATABASE user;<br>
+USE user;<br>
 
-CREATE TABLE user (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(50) NOT NULL UNIQUE,
-    password VARCHAR(100) NOT NULL
-);
-Configure Database Connection in login.java
+CREATE TABLE user (<br>
+    id INT AUTO_INCREMENT PRIMARY KEY,<br>
+    username VARCHAR(50) NOT NULL UNIQUE,<br>
+    password VARCHAR(100) NOT NULL<br>
+    email    VARCHAR(10)<br>
+    phno     VARCHAR(10)<br>
+);<br>
+Configure Database Connection in login.java<br>
 
-Update the following lines as per your system:
+Update the following lines as per your system:<br>
+Connection con = DriverManager.getConnection(<br>
+    "jdbc:mysql://localhost:3306/user?characterEncoding=utf8&useUnicode=true", <br>
+    "root", <br>
+    "your_password"<br>
+);<br>
 
-java
-Copy
-Edit
-Connection con = DriverManager.getConnection(
-    "jdbc:mysql://localhost:3306/user?characterEncoding=utf8&useUnicode=true", 
-    "root", 
-    "your_password"
-);
-Deploy to Apache Tomcat
 
-Place the project folder in the webapps directory of Tomcat.
-
-Start the Tomcat server.
+##  Start the Tomcat server.
 
 Access via: http://localhost:8080/YourProjectName/login.jsp
 
-🔐 Features
+ ##  Features
 User Registration
 
 Secure Login with Session Handling
@@ -79,15 +51,15 @@ Logout Functionality
 
 Input Validation (basic via JSP)
 
-📝 Notes
+## Notes
 Ensure mysql-connector-java is in your lib folder or build path.
 
 Basic password storage is implemented — for production, use encryption (e.g., BCrypt).
 
 Session management is handled via HttpSession.
 
-📸 Screenshots
-(Optional: Add screenshots of registration, login, and homepage UI)
+## VIDEO and Photo
+<br>
 
 👨‍💻 Author
 Developed by Narasimha SL.
