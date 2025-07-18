@@ -15,9 +15,9 @@ This is a simple full-stack web application built using **JSP**, **Servlets**, a
 
 ## Setup Instructions
 
-2. **Create MySQL Database**
+ **Create MySQL Database**
 
-```sql
+sql
 CREATE DATABASE user;<br>
 USE user;<br>
 
@@ -28,7 +28,7 @@ CREATE TABLE user (<br>
     email    VARCHAR(10)<br>
     phno     VARCHAR(10)<br>
 );<br>
-Configure Database Connection in login.java<br>
+## Configure Database Connection in login.java
 
 Update the following lines as per your system:<br>
 Connection con = DriverManager.getConnection(<br>
@@ -59,9 +59,9 @@ Basic password storage is implemented — for production, use encryption (e.g., 
 Session management is handled via HttpSession.
 
 ## VIDEO and Photo
-<br>
 
-👨‍💻 Author
+
+## 👨‍💻 Author
 Developed by Narasimha SL.
 
 📜 License
