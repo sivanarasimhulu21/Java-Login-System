@@ -27,7 +27,10 @@ CREATE TABLE user (<br>
     password VARCHAR(100) NOT NULL<br>
     email    VARCHAR(10)<br>
     phno     VARCHAR(10)<br>
-);<br>
+);<br><img width="607" height="324" alt="Screenshot from 2025-07-18 19-28-05" src="https://github.com/user-attachments/assets/0a2795f3-c602-4251-b025-1bdae3096deb" />
+
+
+
 ## Configure Database Connection in login.java
 
 Update the following lines as per your system:<br>
@@ -58,15 +61,8 @@ Basic password storage is implemented — for production, use encryption (e.g., 
 
 Session management is handled via HttpSession.
 
-## VIDEO and Photo
+## VIDEO 
 
 
-## 👨‍💻 Author
-Developed by Narasimha SL.
+https://github.com/user-attachments/assets/700badc5-4ab5-4466-9ef2-62dff4159882
 
-📜 License
-This project is open source and free to use for educational purposes.
-
-yaml
-Copy
-Edit
