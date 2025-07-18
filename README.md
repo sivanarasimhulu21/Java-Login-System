@@ -10,6 +10,7 @@ This is a simple full-stack web application built using **JSP**, **Servlets**, a
 - MySQL (Database)
 - JDBC (Java Database Connectivity)
 - Apache Tomcat (Server)
+- Bootstrap
 
 
 
